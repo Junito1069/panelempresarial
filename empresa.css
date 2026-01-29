@@ -149,3 +149,56 @@ body {
   background: linear-gradient(135deg, #ef4444, #b91c1c);
   color: #fff;
 }
+/* ===============================
+   RESPONSIVE PARA CELULARES
+   =============================== */
+@media (max-width: 768px) {
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  header, .header {
+    text-align: center;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .container,
+  .products,
+  .catalogo,
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .card,
+  .product,
+  .producto {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  button,
+  .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
