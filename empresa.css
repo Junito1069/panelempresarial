@@ -149,56 +149,72 @@ body {
   background: linear-gradient(135deg, #ef4444, #b91c1c);
   color: #fff;
 }
+
 /* ===============================
-   RESPONSIVE PARA CELULARES
+   FIX RESPONSIVE REAL PARA MOVIL
    =============================== */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
+  * {
+    box-sizing: border-box;
+  }
 
   body {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
-  header, .header {
-    text-align: center;
-    padding: 15px;
+  /* FORZAR COLUMNAS A 1 */
+  div {
+    max-width: 100% !important;
   }
 
-  h1 {
-    font-size: 1.5rem;
-  }
-
+  section,
+  main,
   .container,
   .products,
   .catalogo,
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 10px;
+  .grid,
+  .row {
+    display: block !important;
+    width: 100% !important;
   }
 
+  /* TARJETAS */
   .card,
   .product,
-  .producto {
-    width: 100%;
-    margin: 0 auto;
+  .producto,
+  .item {
+    width: 100% !important;
+    margin: 12px 0 !important;
   }
 
+  /* IMAGENES */
   img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 100% !important;
+    height: auto !important;
   }
 
-  button,
-  .btn {
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
+  /* TEXTO */
+  h1 {
+    font-size: 1.4rem !important;
+  }
+
+  h2 {
+    font-size: 1.2rem !important;
   }
 
   p {
-    font-size: 0.95rem;
+    font-size: 1rem !important;
+  }
+
+  /* BOTONES */
+  button,
+  a,
+  .btn {
+    display: block !important;
+    width: 100% !important;
+    padding: 14px !important;
+    font-size: 1rem !important;
   }
 }
